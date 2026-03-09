@@ -1,7 +1,7 @@
 " bbplc.vim - Syntax highlighting for BBPLC
 
 " Keywords: control flow
-syntax keyword bbplcKeyword IF THEN ELSE ENDIF LABEL GOTO PROC ENDPROC
+syntax keyword bbplcKeyword IF THEN ELSE ENDIF LABEL GOTO PROC ENDPROC MACRO ENDMACRO RETURN CALL
 
 " IO commands
 syntax keyword bbplcIO PRINT PRTLN READ
@@ -13,7 +13,7 @@ syntax keyword bbplcMath ADD SUB MUL DIV MOV SQR POW
 syntax keyword bbplcDeclaration DECLARE RESERVE
 
 " Types
-syntax keyword bbplcType DB DW DD RB
+syntax keyword bbplcType DB DW DD DQ DT RB RW RD RQ RT
 
 " Comments
 syntax match bbplcComment ";.*$"
